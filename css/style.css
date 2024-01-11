@@ -31,9 +31,6 @@ h1{
 p{
     animation: movimento 400ms ease-out;
 }
-.apresentacao1{
-    border-radius: 50%;
-}
 .icons{
     position: fixed;
     right: 0;

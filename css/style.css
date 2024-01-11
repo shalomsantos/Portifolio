@@ -31,9 +31,15 @@ h1{
 p{
     animation: movimento 400ms ease-out;
 }
+.card{
+    margin: 0.5rem 0;
+}
 .icons{
     position: fixed;
     right: 0;
     top: 50%;
     transform: translateX(-50%);
+}
+@media (max-width: 767.98px){
+
 }

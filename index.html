@@ -6,26 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- my js and css -->
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js" defer></script>
     <script type="text/javascript" src="./js/vanilla-tilt.babel.min.js" defer></script>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
     <!-- fontwasome -->
     <script src="https://kit.fontawesome.com/c3cffe3b5e.js" crossorigin="anonymous" defer></script>
-    <title>.:$ Shalom Santos $:.</title>
+    <link rel="icon" type="image/x-icon" href="./img/shalom.png">
+    <title>Portifólio - Shalom Santos</title>
 </head>
 <body>
-    <header class="container d-flex flex-wrap justify-content-center align-items-center">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <span class="fs-4 me-3"><strong>&lt;/&gt;</strong></span>
-            <span class="fs-4 link-secondary">Shalom pereira dos santos</span>
-        </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link link-secondary">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-secondary">Skills</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-secondary">Contato</a></li>
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Shalom pereira dos santos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <!-- CONTAINER ( APRESENTAÇÃO + IMAGEM ) -->
         <div class="row py-5">
@@ -52,7 +65,8 @@
                 <div class="card">
                     <i class="fa-solid fa-database mx-auto my-3" style="font-size: 5rem;"></i>
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Sql</h5>
+                        <p class="card-text">Mensagem relevante sobre o tema a cima, em breve terá.</p>
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                             <buton type="button" class="btn btn-sm btn-outline-secondary">Edit</buton>
@@ -64,9 +78,8 @@
                 <div class="card">
                     <i class="fa-brands fa-php mx-auto my-3" style="font-size: 5rem;"></i>
                     <div class="card-body">
-                        <p class="card-text">
-                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                        </p>
+                        <h5 class="card-title">Php versão 8.1</h5>
+                        <p class="card-text">Mensagem relevante sobre o tema a cima, em breve terá.</p>
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                             <buton type="button" class="btn btn-sm btn-outline-secondary">Edit</buton>
@@ -78,7 +91,47 @@
                 <div class="card">
                     <i class="fa-brands fa-js mx-auto my-3" style="font-size: 5rem;"></i>
                     <div class="card-body">
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Javascript</h5>
+                        <p class="card-text">Mensagem relevante sobre o tema a cima, em breve terá.</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <buton type="button" class="btn btn-sm btn-outline-secondary">Edit</buton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <i class="fa-brands fa-laravel mx-auto my-3" style="font-size: 5rem;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Laravel</h5>
+                        <p class="card-text">Mensagem relevante sobre o tema a cima, em breve terá.</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <buton type="button" class="btn btn-sm btn-outline-secondary">Edit</buton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <i class="fa-brands fa-css3-alt mx-auto my-3" style="font-size: 5rem;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Css 3</h5>
+                        <p class="card-text">Mensagem relevante sobre o tema a cima, em breve terá.</p>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <buton type="button" class="btn btn-sm btn-outline-secondary">Edit</buton>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card">
+                    <i class="fa-brands fa-bootstrap mx-auto my-3" style="font-size: 5rem;"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Mensagem relevante sobre o tema a cima, em breve terá.</p>
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                             <buton type="button" class="btn btn-sm btn-outline-secondary">Edit</buton>

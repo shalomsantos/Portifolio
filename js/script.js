@@ -1,14 +1,14 @@
-import { Octokit } from "octokit";
+// import { Octokit } from "octokit";
 
-const octokit = new Octokit({ });
+// const octokit = new Octokit({ });
 
-const data = await octokit.paginate("GET /repos/{owner}/{repo}/issues", {
-  owner: "octocat",
-  repo: "Spoon-Knife",
-  per_page: 100,
-  headers: {
-    "X-GitHub-Api-Version": "2022-11-28",
-  },
-});
+// const data = await octokit.paginate("GET /repos/{owner}/{repo}/issues", {
+//   owner: "octocat",
+//   repo: "Spoon-Knife",
+//   per_page: 50,
+//   headers: {
+//     "X-GitHub-Api-Version": "2022-11-28",
+//   },
+// });
 
-console.log(data)
+// console.log(data)

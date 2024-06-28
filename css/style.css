@@ -63,6 +63,9 @@ h1{
 p{
     animation: movimento 1s ease-in;
 }
+.nav-link{
+    cursor: pointer;
+}
 .card{
     margin: 0.5rem 0;
 }

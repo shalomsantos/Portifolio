@@ -3,11 +3,19 @@
 @keyframes movimento {
     0%{
         opacity: 0%;
-        transform: translate(0px, -25px)
+        transform: translate(0px, -0.5rem)
     }
     100%{
         opacity: 100%;
         transform: translate(0, 0)
+    }
+}
+@keyframes outro {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
     }
 }
 @keyframes animationImg {
@@ -37,14 +45,23 @@ html{
 body{
     max-width: 100vw;
 }
-header{
-    height: 10vh;
+nav{
+    height: 15vh;
+}
+main{
+    height: 70vh;
+}
+footer{
+    height: 5vh;
+}
+.skills, .repositorios, .contatos{
+    display: none;
 }
 h1{
     animation: movimento 2s ease-out;
 }
 p{
-    animation: movimento 400ms ease-out;
+    animation: movimento 1s ease-in;
 }
 .card{
     margin: 0.5rem 0;
@@ -59,4 +76,24 @@ p{
     /* border-radius: 31% 69% 70% 30% / 55% 47% 53% 45%; */
     border-radius: 50%;
     animation: animationImg 1s ease-out;
+}
+.repos-link:hover{
+    color: black !important;
+}
+.repos:hover .link{ 
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    display: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 92%;
+    transition: all 0.2s ease;
+    background-color: rgba(194, 194, 194, 0.509);
+    animation: outro 1s ease;
 }

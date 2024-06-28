@@ -26,134 +26,192 @@
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" onClick="selectPage('home')">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" onClick="selectPage('skills')">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contatos</a>
+                        <a class="nav-link" onClick="selectPage('repositorios')">Repositórios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onClick="selectPage('contatos')">Contatos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <!-- CONTAINER ( APRESENTAÇÃO + IMAGEM ) -->
-        <div class="row py-3 py-sm-5">
-            <div class="col-12 col-md-8">
+    <main class="container">
+        <section class="apresentacao h-100">
+            <div class="row py-3 py-sm-5">
                 <div class="col-12 col-md-8">
-                    <h5>Eu sou</h5>
-                    <h1 class="fw-bold">Shalom Santos</h1>
-                    <p class="fs-5">Meu perfil do GitHub esta sempre com meus projetos recentes onde busco aprimorar minhas skils em diversas tecnologias como <strong>SQL, PHP, javascript, C#</strong>.</p>
+                    <div class="col-12 col-md-8">
+                        <h5>I'm software developer full-stack</h5>
+                        <h1 class="fw-bold">Shalom Santos</h1>
+                        <p class="fs-5">Acostumado a desenvolver soluções de software, seja na interface de usuário, seja na mudança ou criação de regras de negócios para uma aplicação web.</p>
+                    </div>
+                    <a class="btn btn-dark btn-sm" href="#">Developer</a>
                 </div>
-                <a class="btn btn-dark btn-sm" href="#">Developer</a>
+                <div class="col-12 col-md-4 pt-4 pt-md-0 d-flex justify-content-center align-items-center">
+                    <img class="myphoto" src="./img/up.png" alt="" width="250">
+                </div>
             </div>
-            <div class="col-12 col-md-4 pt-4 pt-md-0 d-flex justify-content-center align-items-center">
-                <img class="myphoto" src="./img/up.png" alt="" width="250">
-            </div>
-        </div>
+        </section>
 
-        <!-- TAG TITULO ==SKILLS== -->
-        <div class="container position-relative d-flex flex-column">
-            <hr>
-            <h1 class="position-absolute top-50 start-50 translate-middle text-center bg-white">Skills</h1>
-        </div>
+        <section class="skills h-100">
+            <div class="container d-flex flex-column">
+                <hr>
+                <h1 class="text-center bg-white px-3">Skills</h1>
+            </div>
+            <div class="row py-3 py-sm-5">
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-solid fa-database mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Sql</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-brands fa-php mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Php 8.1+</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-brands fa-js mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Javascript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-brands fa-laravel mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Laravel</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-brands fa-css3-alt mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Css 3</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-brands fa-bootstrap mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Bootstrap</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-brands fa-vuejs mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Vue.js 2+</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3">
+                    <div class="card">
+                        <i class="fa-brands fa-docker mx-auto my-3 fs-1"></i>
+                        <div class="card-body text-center text-sm-start">
+                            <h5 class="card-title">Docker</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="row py-3 py-sm-5">
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-solid fa-database mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Sql</h5>
+        <section class="repositorios h-100">
+            <div class="container d-flex flex-column">
+                <hr>
+                <h1 class="text-center bg-white px-3">Repositórios</h1>
+            </div>
+            <div class="row py-3 py-sm-5">
+                <div class="col-12 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">E-commerce</h5>
+                        <p class="card-text">Meu primeiro projeto usando php como framework laravel, nesse desafio consegui definir bem a organização das pastas e fazer o bom uso de cada uma.</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 position-relative repos">
+                                <img src="./img/print-1.png" alt="" class="w-100 rounded-3 border">
+                                <div class="link position-absolute rounded-3">
+                                    <a href="https://github.com/shalomsantos/dockerLaravel" class="text-white text-center repos-link">
+                                        <i class="fa-brands fa-laravel fs-1"></i>
+                                        <p class="text-capitalize">dockerLaravel</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <p class="fw-bold mb-0">PHP + Framework Laravel 10</p>
+                                <p class="fw-bold mb-0">Docker (compose)</p>
+                                <p class="fw-bold mb-0">Bootstrap</p>
+                                <p class="fw-bold mb-0">Js lib's</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-brands fa-php mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Php 8.1+</h5>
+                <div class="col-12 col-sm-6">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Apresentação de dados consumidos via Api</h5>
+                        <p class="card-text">Aqui coloquei a prova minhas habilidades de consumir um serviço externo e apresenta-lo em tela de forma elegante e responsiva.</p>
+                        <div class="row">
+                            <div class="col-12 col-sm-6 position-relative repos">
+                                <img src="./img/pokemonapi.png" alt="" class="w-100 rounded-3 border">
+                                <div class="link position-absolute rounded-3">
+                                    <a href="https://github.com/shalomsantos/PokemonApi" class="text-white text-center repos-link">
+                                        <i class="fa-solid fa-arrow-up-right-from-square fs-1"></i>
+                                        <p class="text-capitalize">PokemonApi</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <p class="fw-bold mb-0">Html</p>
+                                <p class="fw-bold mb-0">Css</p>
+                                <p class="fw-bold mb-0">Js</p>
+                                <p class="fw-bold mb-0">Api</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <a href="https://github.com/shalomsantos">Ver mais...</a>
             </div>
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-brands fa-js mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Javascript</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-brands fa-laravel mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Laravel</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-brands fa-css3-alt mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Css 3</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-brands fa-bootstrap mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Bootstrap</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-brands fa-vuejs mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Vue.js 2+</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-4 col-md-3">
-                <div class="card">
-                    <i class="fa-brands fa-docker mx-auto my-3 fs-1"></i>
-                    <div class="card-body text-center text-sm-start">
-                        <h5 class="card-title">Docker</h5>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+        </section>
 
-        <!-- TAG TITULO ==CONTATOS== -->
-        <div class="container position-relative d-flex flex-column">
-            <hr>
-            <h1 class="position-absolute top-50 start-50 translate-middle text-center bg-white">Contatos</h1>
-        </div>
-        <div class="d-flex align-items-center gap-3 flex-column flex-sm-row py-3">
-            <a class="btn btn-outline-dark d-flex"  href="https://github.com/shalomsantos">
-                <i class="fa-brands fa-github fs-1 me-2"></i>
-                <p class="my-auto">GitHub</p>
-            </a>
-            <a class="btn btn-outline-dark d-flex" href="https://www.instagram.com/shalomsantoss/">
-                <i class="fa-brands fa-instagram fs-1 me-2"></i>
-                <p class="my-auto">Instagram</p>
-            </a>
-        </div>
+        <section class="contatos h-100">
+            <div class="container d-flex flex-column">
+                <hr>
+                <h1 class="text-center bg-white px-3">Contatos</h1>
+            </div>
+            <div class="d-flex align-items-center gap-3 flex-column flex-sm-row py-3">
+                <a class="btn btn-outline-dark d-flex"  href="https://github.com/shalomsantos">
+                    <i class="fa-brands fa-github fs-1 me-2"></i>
+                    <p class="my-auto">GitHub</p>
+                </a>
+                <a class="btn btn-outline-dark d-flex" href="https://www.instagram.com/shalomsantoss/">
+                    <i class="fa-brands fa-instagram fs-1 me-2"></i>
+                    <p class="my-auto">Instagram</p>
+                </a>
+            </div>
+        </section>
     </main>
-
-    <footer>
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
             </a>
             <span class="mb-3 mb-md-0 text-muted">&copy; 2024 Shalom pereira dos santos</span>
-          </div>
-        </footer>
+        </div>
     </footer>
 </body>
 </html>

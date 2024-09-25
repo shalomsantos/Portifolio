@@ -105,3 +105,10 @@ h1{
     background-color: rgba(194, 194, 194, 0.509);
     animation: outro 1s ease;
 }
+.nav-item > .nav-link.active{
+    box-shadow: 0 1px 0 0 white;
+
+}
+.nav-item > .nav-link:hover{
+    box-shadow: 0 2px 0 0 white;
+}

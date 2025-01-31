@@ -56,8 +56,8 @@ main{
 footer{
     height: 10vh !important;
 }
-.skills, .repositorios, .contatos{
-    /* display: none; */
+.apresentacao, .skills, .repositorios{
+    box-shadow: 0 0.2rem 0 0 rgb(206, 206, 206);
 }
 h1{
     animation: movimento 600ms ease-in-out;

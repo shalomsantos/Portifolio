@@ -47,14 +47,14 @@ body{
     min-height: 100vh;
     background-color: rgba(235, 235, 235, 0.705) !important;
 }
-nav{
-    height: 10vh !important;
-}
-main{
-    min-height: 80vh !important;
-}
 footer{
-    height: 10vh !important;
+    min-height: 10vh;
+}
+.contatos{
+    min-height: 80vh;
+}
+.apresentacao, .skills, .repositorios{
+    min-height: 90vh;
 }
 .apresentacao, .skills, .repositorios{
     box-shadow: 0 0.2rem 0 0 rgb(206, 206, 206);
@@ -65,55 +65,9 @@ h1{
 p{
     animation: movimento 300ms ease-in-out;
 }
-.nav-link{
-    cursor: pointer;
-}
-.card{
-    margin: 0.5rem 0;
-    z-index: -1;
-}
-h1{
-    z-index: -1;
-}
-.icons{
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateX(-50%);
-}
 .myphoto{
     border-radius: 50%;
     animation: animationImg 800ms ease-in-out;
-}
-.repos-link:hover{
-    color: black !important;
-}
-.repos:hover .link{ 
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.link{
-    display: none;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    width: 92%;
-    transition: all 0.2s ease;
-    background-color: rgba(194, 194, 194, 0.509);
-    animation: outro 1s ease;
-}
-
-@media only screen and (min-width: 600px) {
-    .nav-item > .nav-link.active{
-        box-shadow: 0 1px 0 0 white;
-    
-    }
-    .nav-item > .nav-link:hover{
-        box-shadow: 0 2px 0 0 white;
-    }
 }
 @media only screen and (max-width: 600px) {
     .myphoto{

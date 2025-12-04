@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ===TEMA=== */
+
+/* #9C7B5A */
+
 @keyframes movimento {
     0%{
         opacity: 0%;
@@ -47,17 +52,45 @@ body{
     min-height: 100vh;
     background-color: rgba(235, 235, 235, 0.705) !important;
 }
+nav, footer{
+    background-color: #83674b !important;
+}
+main{
+    background-color: #ffc9945d;
+}
 footer{
     min-height: 10vh;
+}
+.default-color{
+    color: #83674B;
 }
 .contatos{
     min-height: 80vh;
 }
-.apresentacao, .skills, .repositorios{
-    min-height: 90vh;
+.icon-contact{
+    padding: 0.5rem 1rem;
+    background-color: #9C7B5A;
+    color: white;
+    border-radius: 0.6rem;
+    transition: 250ms;
+}
+.icon-contact > i{
+    font-size: 4rem !important;
+}
+.icon-res{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #9C7B5A;
+    color: white;
+    border-radius: 0.6rem;
+    transition: 250ms;
+}
+.icon-res:hover{
+    background-color: #83674B;
+    color: black;
 }
 .apresentacao, .skills, .repositorios{
-    box-shadow: 0 0.2rem 0 0 rgb(206, 206, 206);
+    min-height: 90vh;
 }
 h1{
     animation: movimento 600ms ease-in-out;
@@ -66,8 +99,9 @@ p{
     animation: movimento 300ms ease-in-out;
 }
 .myphoto{
-    border-radius: 50%;
+    border-radius: 8% 8% 50% 50%;
     animation: animationImg 800ms ease-in-out;
+    box-shadow: rgba(128, 128, 128, 0.473) 0 0 2rem 0.5rem;
 }
 @media only screen and (max-width: 600px) {
     .myphoto{

@@ -22,206 +22,199 @@
 </head>
 
 <body>
-    <div class="position-relative">
-        <nav id="navbar-example2"
-            class="navbar navbar-expand-sm border-bottom border-body px-3 position-fixed top-0 w-100 z-3"
-            style="height: 10vh;">
-            <div class="container-fluid z-3">
-                <a class="navbar-brand text-white" href="#">Desenvolvedor fullstack</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse z-3" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white active" href="#scrollspyHeading1">Sobre mim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#scrollspyHeading2">Tecnologias</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#scrollspyHeading3">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#scrollspyHeading4">Contato</a>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-md navbar-dark px-3 fixed-top top-0 w-100" style="z-index: 10;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Desenvolvedor fullstack</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#scrollspyHeading1">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Tecnologias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading3">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading4">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px 0px" data-bs-smooth-scroll="true" class="scrollspy-example p-3" tabindex="0" style="margin-top: 8.8vh;">
+        <div class="container">
+            <!-- APRESENTACAO -->
+            <section class="apresentacao" id="scrollspyHeading1">
+                <div class="row py-3 py-sm-5">
+                    <div class="col-12 col-md-6">
+                        <h5>I'm software developer full-stack</h5>
+                        <h1 class="fw-bold default-color">Shalom Santos</h1>
+                        <p class="fs-5">Acostumado a desenvolver soluções de software, seja na interface de usuário,
+                            seja na mudança ou criação de regras de negócios para uma aplicação web.</p>
+                        <span class="btn btn-dark btn-sm">Developer</span>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center mt-4 mt-sm-4 mt-md-0">
+                        <img class="myphoto" src="./img/eu.jpg" alt="" width="400">
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </section>
+            
+            <!-- SKILLS -->
+            <section class="skills" id="scrollspyHeading2">
+                <h1 class="fw-bold pt-3 default-color">Estou acostumado</h1>
+                <hr>
+                <div class="row py-3 py-sm-5">
+                    <div class="col-6 col-sm-4 col-md-3 pb-3 col-lg-2">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-solid fa-database mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">SQL</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 pb-3 col-lg-2">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-brands fa-php mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">PHP</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-brands fa-js mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">Javascript</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 pb-3">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-brands fa-laravel mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">Laravel</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 pb-3">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-brands fa-css3-alt mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">Css 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 pb-3">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-brands fa-bootstrap mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">Bootstrap</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 pb-3">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-brands fa-vuejs mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">Vue.js</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 pb-3 col-lg-2">
+                        <div class="card shadow-sm border border-3">
+                            <i class="fa-brands fa-docker mx-auto my-3 fs-1"></i>
+                            <div class="card-body text-center text-sm-start">
+                                <h5 class="card-title">Docker</h5>
+                            </div>
 
-        <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px 0px"
-            data-bs-smooth-scroll="true" class="scrollspy-example p-3" tabindex="0"
-            style="margin-top: 10vh;">
-            <div class="container">
-                <!-- APRESENTACAO -->
-                <section class="apresentacao" id="scrollspyHeading1">
-                    <div class="row py-3 py-sm-5">
-                        <div class="col-12 col-md-6">
-                            <h5>I'm software developer full-stack</h5>
-                            <h1 class="fw-bold default-color">Shalom Santos</h1>
-                            <p class="fs-5">Acostumado a desenvolver soluções de software, seja na interface de usuário,
-                                seja na mudança ou criação de regras de negócios para uma aplicação web.</p>
-                            <span class="btn btn-dark btn-sm">Developer</span>
-                        </div>
-                        <div class="col-12 col-md-6 d-flex justify-content-center mt-4 mt-sm-4 mt-md-0">
-                            <img class="myphoto" src="./img/eu.jpg" alt="" width="400">
                         </div>
                     </div>
-                </section>
-                
-                <!-- SKILLS -->
-                <section class="skills" id="scrollspyHeading2">
-                    <h1 class="fw-bold pt-3 default-color">Estou acostumado</h1>
-                    <hr>
-                    <div class="row py-3 py-sm-5">
-                        <div class="col-6 col-sm-4 col-md-3 pb-3 col-lg-2">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-solid fa-database mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">SQL</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 pb-3 col-lg-2">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-brands fa-php mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">PHP</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-brands fa-js mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">Javascript</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 pb-3">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-brands fa-laravel mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">Laravel</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 pb-3">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-brands fa-css3-alt mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">Css 3</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 pb-3">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-brands fa-bootstrap mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">Bootstrap</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 pb-3">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-brands fa-vuejs mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">Vue.js</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4 col-md-3 pb-3 col-lg-2">
-                            <div class="card shadow-sm border border-3">
-                                <i class="fa-brands fa-docker mx-auto my-3 fs-1"></i>
-                                <div class="card-body text-center text-sm-start">
-                                    <h5 class="card-title">Docker</h5>
-                                </div>
-    
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- REPOSITORIOS -->
-                <section class="repositorios" id="scrollspyHeading3">
-                    <h1 class="fw-bold pt-3 default-color">Meus projetos</h1>
-                    <hr>
-                    <div class="row py-3 py-sm-5">
-                        <div class="text-center col-12 col-sm-4">
-                            <a class="card-body" href="https://github.com/shalomsantos/dockerLaravel">
-                                <h5 class="card-title fw-bold mb-2">dockerLaravel</h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="rounded-3">
-                                            <a href="https://github.com/shalomsantos/dockerLaravel"
-                                                class="text-white text-center">
-                                                <img src="./img/print-1.png" alt="" class="w-100 rounded-3 border">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <p class="fw-bold">
-                                            <i class="icon-res fa-solid fa-database"></i> 
-                                            <i class="icon-res fa-brands fa-docker"></i>
-                                            <i class="icon-res fa-brands fa-bootstrap"></i>
-                                            <i class="icon-res fa-brands fa-js"></i>
-                                        </p>
+                </div>
+            </section>
+            
+            <!-- REPOSITORIOS -->
+            <section class="repositorios" id="scrollspyHeading3">
+                <h1 class="fw-bold pt-3 default-color">Meus projetos</h1>
+                <hr>
+                <div class="row py-3 py-sm-5">
+                    <div class="text-center col-12 col-sm-12 col-md-6 col-lg-3">
+                        <a class="card-body" href="https://github.com/shalomsantos/dockerLaravel">
+                            <h5 class="card-title fw-bold mb-2">dockerLaravel</h5>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="rounded-3">
+                                        <a href="https://github.com/shalomsantos/dockerLaravel"
+                                            class="text-white text-center">
+                                            <img src="./img/print-1.png" alt="" class="w-100 rounded-3 border">
+                                        </a>
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="text-center col-12 col-sm-4 mt-4 mt-sm-4 mt-md-0">
-                            <a class="card-body" href="https://github.com/shalomsantos/PokemonApi">
-                                <h5 class="card-title fw-bold mb-2">PokemonApi</h5>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="rounded-3">
-                                            <a href="https://github.com/shalomsantos/PokemonApi"
-                                                class="text-white text-center">
-                                                <img src="./img/pokemonapi.png" alt="" class="w-100 rounded-3 border">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <p class="fw-bold">
-                                            <i class="icon-res fa-brands fa-html5"></i>
-                                            <i class="icon-res fa-brands fa-css3-alt"></i>
-                                            <i class="icon-res fa-brands fa-square-js"></i>
-                                            <i class="icon-res fa-solid fa-book-atlas"></i>
-                                        </p>
-                                    </div>
+                                <div class="col-12 mt-2">
+                                    <p class="fw-bold">
+                                        <i class="icon-res fa-solid fa-database"></i> 
+                                        <i class="icon-res fa-brands fa-docker"></i>
+                                        <i class="icon-res fa-brands fa-bootstrap"></i>
+                                        <i class="icon-res fa-brands fa-js"></i>
+                                    </p>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- CONTATOS -->
-                <section class="contatos" id="scrollspyHeading4">
-                    <h1 class="fw-bold pt-3 default-color">Fale comigo</h1>
-                    <hr>
-                    <div class="d-flex flex-column flex-sm-row gap-3 py-3">
-                        <a class="icon-contact" href="https://github.com/shalomsantos">
-                            <i class="fa-brands fa-github fs-1"></i>
-                        </a>
-                        <a class="icon-contact" href="https://www.instagram.com/shalomsantoss/">
-                            <i class="fa-brands fa-instagram fs-1"></i>
-                        </a>
-                        <a class="icon-contact" href="https://www.linkedin.com/in/shalom-santos-9891a11a6/">
-                            <i class="fa-brands fa-linkedin fs-1"></i>
+                            </div>
                         </a>
                     </div>
-                </section>
-            </div>
-        </main>
+                    <div class="text-center col-12 col-sm-12 col-md-6 col-lg-3 mt-4 mt-sm-4 mt-md-0">
+                        <a class="card-body" href="https://github.com/shalomsantos/PokemonApi">
+                            <h5 class="card-title fw-bold mb-2">PokemonApi</h5>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="rounded-3">
+                                        <a href="https://github.com/shalomsantos/PokemonApi"
+                                            class="text-white text-center">
+                                            <img src="./img/pokemonapi.png" alt="" class="w-100 rounded-3 border">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <p class="fw-bold">
+                                        <i class="icon-res fa-brands fa-html5"></i>
+                                        <i class="icon-res fa-brands fa-css3-alt"></i>
+                                        <i class="icon-res fa-brands fa-square-js"></i>
+                                        <i class="icon-res fa-solid fa-book-atlas"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CONTATOS -->
+            <section class="contatos" id="scrollspyHeading4">
+                <h1 class="fw-bold pt-3 default-color">Fale comigo</h1>
+                <hr>
+                <div class="d-flex flex-column flex-sm-row gap-3 py-3">
+                    <a class="icon-contact" href="https://github.com/shalomsantos">
+                        <i class="fa-brands fa-github fs-1"></i>
+                    </a>
+                    <a class="icon-contact" href="https://www.instagram.com/shalomsantoss/">
+                        <i class="fa-brands fa-instagram fs-1"></i>
+                    </a>
+                    <a class="icon-contact" href="https://www.linkedin.com/in/shalom-santos-9891a11a6/">
+                        <i class="fa-brands fa-linkedin fs-1"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
 
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-            <div class="container">
-                <span class="mb-3 mb-md-0 text-white"><i class="fa-solid fa-at"></i> 2024 Shalom pereira dos santos</span>
-            </div>
-        </footer>
-    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+        <div class="container">
+            <span class="mb-3 mb-md-0 text-white"><i class="fa-solid fa-at"></i> 2024 Shalom pereira dos santos</span>
+        </div>
+    </footer>
 </body>
 
 </html>

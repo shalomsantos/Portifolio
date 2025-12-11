@@ -1,10 +1,14 @@
+/* GOOGLE FONTS IMPORTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* GOOGLE FONTS IMPORTS */
 
-/* ===TEMA=== */
+/* ROOT CONFIG */
+:root {
+  --default-color: #ffc9945d;
+}/* ROOT CONFIG */
 
-/* #9C7B5A */
-
+/* KEYFRANES */
 @keyframes movimento {
     0%{
         opacity: 0%;
@@ -37,12 +41,14 @@
         opacity: 100%;
         transform: scale(1);
     }
-}
+}/* KEYFRANES */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    color: #83674B;
 }
 html{
     max-width: 100vw;
@@ -50,7 +56,7 @@ html{
 body{
     max-width: 100vw;
     min-height: 100vh;
-    background-color: rgba(235, 235, 235, 0.705) !important;
+    background-color: #ffc9945d;
 }
 nav, footer{
     background-color: #83674b !important;
@@ -61,21 +67,11 @@ main{
 footer{
     min-height: 10vh;
 }
-.default-color{
-    color: #83674B;
+section{
+    background-color: var(--default-color);
 }
 .contatos{
     min-height: 80vh;
-}
-.icon-contact{
-    padding: 0.5rem 1rem;
-    background-color: #9C7B5A;
-    color: white;
-    border-radius: 0.6rem;
-    transition: 250ms;
-}
-.icon-contact > i{
-    font-size: 4rem !important;
 }
 .icon-res{
     font-size: 1.2rem;
@@ -87,10 +83,19 @@ footer{
 }
 .icon-res:hover{
     background-color: #83674B;
-    color: black;
+    color: black !important;
 }
 .apresentacao, .skills, .repositorios{
     min-height: 90vh;
+}
+a.card{
+    text-decoration: none !important;
+}
+a.card:hover{
+    box-shadow: grey 0 1rem 0 1rem;
+}
+.card{
+    background-color: rgba(215, 180, 148, 0.515) !important;
 }
 h1{
     animation: movimento 600ms ease-in-out;

@@ -1,29 +1,17 @@
-const apresentacao = document.querySelector('.apresentacao');
-const skills = document.querySelector('.skills');
-const repositorios = document.querySelector('.repositorios');
-const contatos = document.querySelector('.contatos');
+if (typeof Splide !== 'undefined') {
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        perMove: 1,
+        gap: '1rem',
+        breakpoints: {
+            992: { perPage: 3 },
+            768: { perPage: 2 },
+            576: { perPage: 1 }
+        }
+    });
 
-function selectPage(name){
-    if(name == 'home'){
-        apresentacao.style.display = 'block';
-        skills.style.display = 'none';
-        repositorios.style.display = 'none';
-        contatos.style.display = 'none';
-    }else if(name == 'skills'){
-        apresentacao.style.display = 'none';
-        skills.style.display = 'block';
-        repositorios.style.display = 'none';
-        contatos.style.display = 'none';
-    }else if(name == 'repositorios'){
-        apresentacao.style.display = 'none';
-        skills.style.display = 'none';
-        repositorios.style.display = 'block';
-        contatos.style.display = 'none';
-    }else {
-        apresentacao.style.display = 'none';
-        skills.style.display = 'none';
-        repositorios.style.display = 'none';
-        contatos.style.display = 'block';
-    }
-    // skills.style.display = 'block';
+    splide.mount();
+} else {
+    console.error("Splide não está definido. Verifique o caminho da biblioteca.");
 }

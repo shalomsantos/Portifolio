@@ -88,6 +88,13 @@ section{
 .apresentacao, .skills, .repositorios{
     min-height: 90vh;
 }
+.card-link{
+    color: #83674B;
+    text-decoration: none;
+}
+.card-link:hover{
+    text-decoration: underline;
+}
 a.card{
     text-decoration: none !important;
 }

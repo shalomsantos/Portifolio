@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark px-3 fixed-top top-0 w-100" style="z-index: 10;">
+    <nav class="navbar navbar-expand-md navbar-dark mt-sm-3 mt-2 mx-sm-5 mx-2 fixed-top top-0 rounded" style="z-index: 10;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Software developer</a>
+            <a class="navbar-brand" href="#">Shalom Santos</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                         <a class="nav-link active" href="#scrollspyHeading1">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHeading2">Tecnologias</a>
+                        <a class="nav-link" href="#scrollspyHeading2">Hard-skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#scrollspyHeading3">Projetos</a>
@@ -39,14 +39,14 @@
             </div>
         </div>
     </nav>
-    <main class="scrollspy-example" tabindex="0" style="margin-top: 8.6vh;" data-bs-spy="scroll"
+    <main class="scrollspy-example" tabindex="0" style="margin-top: 12vh;" data-bs-spy="scroll"
         data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px 0px" data-bs-smooth-scroll="true">
         <div class="container">
             <section class="apresentacao px-2 px-sm-3 px-md-4" id="scrollspyHeading1">
                 <div class="row py-3 py-sm-5">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 lateral-line-minimal">
                         <h5>I'm full-stack 😊</h5>
-                        <h1 class="fw-bold default-color">Shalom Santos</h1>
+                        <h1 class="fw-bold">Shalom Santos</h1>
                         <p class="fs-5">Acostumado a desenvolver soluções de software, seja na interface de usuário,
                             seja na mudança ou criação de regras de negócios para uma aplicação web.</p>
                         <i class="icon-res fa-solid fa-code"></i>
@@ -58,7 +58,7 @@
             </section>
 
             <section class="skills px-2 px-sm-3 px-md-4" id="scrollspyHeading2">
-                <h1 class="fw-bold pt-3 default-color">Estou acostumado</h1>
+                <h1 class="fw-bold lateral-line">Estou acostumado</h1>
                 <hr>
                 <div class="row py-3 py-sm-5">
 
@@ -138,32 +138,14 @@
             </section>
 
             <section class="repositorios px-0 px-sm-0 px-md-4" id="scrollspyHeading3">
-                <h1 class="fw-bold pt-3 default-color">Meus projetos</h1>
+                <h1 class="fw-bold lateral-line">Meus projetos</h1>
                 <hr>
 
                 <div class="splide" id="repos-splide" aria-label="Carrossel de Repositórios">
                     <div class="splide__track px-4">
                         <ul class="splide__list">
 
-                            <li class="splide__slide">
-                                <div class="card h-100 shadow">
-                                    <div class="card-body d-flex flex-column">
-                                        <p class="fs-3 fw-bold">dockerLaravel</p>
-                                        <p class="card-text flex-grow-1">
-                                            Além do uso de laravel neste projeto tive o desafio de abordagem de design
-                                            pattern; o conhecido service repository.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-end pt-2 mt-auto">
-                                            <i class="icon-res fa-brands fa-laravel fs-3"
-                                                title="Framework: Laravel"></i>
-                                            <a href="https://github.com/shalomsantos/dockerLaravel" target="_blank"
-                                                class="card-link">Ir para GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="splide__slide">
+                            <a href="https://github.com/shalomsantos/Kronos" class="splide__slide text-decoration-none">
                                 <div class="card h-100 shadow">
                                     <div class="card-body d-flex flex-column">
                                         <p class="fs-3 fw-bold">Kronos</p>
@@ -172,15 +154,17 @@
                                             desenvolvimento de uma aplicação orçamentária de projetos e eventos.
                                         </p>
                                         <div class="d-flex justify-content-between align-items-end pt-2 mt-auto">
-                                            <i class="icon-res fa-brands fa-vuejs fs-3" title="Tecnologia: Vue.js"></i>
-                                            <a href="https://github.com/shalomsantos/Kronos" target="_blank"
-                                                class="card-link">Ir para GitHub</a>
+                                            <div>
+                                                <i class="icon-res fa-brands fa-laravel" title="Laravel"></i>
+                                                <i class="icon-res fa-brands fa-vuejs" title="vue.js"></i>
+                                            </div>
+                                            <i class="fa-brands fa-github"></i>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </a>
 
-                            <li class="splide__slide">
+                            <a href="https://github.com/shalomsantos/learningJava" class="splide__slide text-decoration-none">
                                 <div class="card h-100 shadow">
                                     <div class="card-body d-flex flex-column">
                                         <p class="fs-3 fw-bold">learningJava</p>
@@ -189,15 +173,14 @@
                                             disposição de uma rota com algumas estatisticas.
                                         </p>
                                         <div class="d-flex justify-content-between align-items-end pt-2 mt-auto">
-                                            <i class="icon-res fa-brands fa-java fs-3" title="Linguagem: Java"></i>
-                                            <a href="https://github.com/shalomsantos/learningJava" target="_blank"
-                                                class="card-link">Ir para GitHub</a>
+                                            <i class="icon-res fa-brands fa-java" title="Java"></i>
+                                            <i class="fa-brands fa-github"></i>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </a>
 
-                            <li class="splide__slide">
+                            <a href="https://github.com/shalomsantos/phpdocker" class="splide__slide text-decoration-none">
                                 <div class="card h-100 shadow">
                                     <div class="card-body d-flex flex-column">
                                         <p class="fs-3 fw-bold">phpdocker</p>
@@ -206,71 +189,32 @@
                                             PHP, agrupando diversas concepções em consenso entre os desenvolvedores.
                                         </p>
                                         <div class="d-flex justify-content-between align-items-end pt-2 mt-auto">
-                                            <i class="icon-res fa-brands fa-php fs-3" title="Linguagem: PHP"></i>
-                                            <a href="https://github.com/shalomsantos/phpdocker" target="_blank"
-                                                class="card-link">Ir para GitHub</a>
+                                            <i class="icon-res fa-brands fa-php" title="PHP"></i>
+                                            <i class="fa-brands fa-github"></i>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div class="card h-100 shadow">
-                                    <div class="card-body d-flex flex-column">
-                                        <p class="fs-3 fw-bold">Portifolio</p>
-                                        <p class="card-text flex-grow-1">
-                                            Que tal me conhecer um pouco, fique a vontade.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-end pt-2 mt-auto">
-                                            <i class="icon-res fa-solid fa-code fs-3" title="Projeto"></i>
-                                            <a href="https://github.com/shalomsantos/Portifolio" target="_blank"
-                                                class="card-link">Ir para GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div class="card h-100 shadow">
-                                    <div class="card-body d-flex flex-column">
-                                        <p class="fs-3 fw-bold">Shalomsantos</p>
-                                        <p class="card-text flex-grow-1">
-                                            Minha propria apresentação.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-end pt-2 mt-auto">
-                                            <i class="icon-res fa-solid fa-user fs-3" title="Perfil"></i>
-                                            <a href="https://github.com/shalomsantos/Shalomsantos" target="_blank"
-                                                class="card-link">Ir para GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <div class="card h-100 shadow">
-                                    <div class="card-body d-flex flex-column">
-                                        <p class="fs-3 fw-bold">Utils</p>
-                                        <p class="card-text flex-grow-1">
-                                            Matriz de projetos com objetivo de testar libs e solução atuais; um espaço
-                                            de mente aberta.
-                                        </p>
-                                        <div class="d-flex justify-content-between align-items-end pt-2 mt-auto">
-                                            <i class="icon-res fa-solid fa-screwdriver-wrench fs-3" title="Utils"></i>
-                                            <a href="https://github.com/shalomsantos/Utils" target="_blank"
-                                                class="card-link">Ir para GitHub</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
+                            </a>
                         </ul>
                     </div>
                 </div>
             </section>
 
             <section class="contatos px-2 px-sm-3 px-md-4" id="scrollspyHeading4">
-                <h1 class="fw-bold pt-3 default-color">Fale comigo</h1>
+                <h1 class="fw-bold lateral-line">Contatos e redes</h1>
                 <hr>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-1 col-form-label"><i class="fa-solid fa-envelope"></i></label>
+                    <div class="col-sm-10">
+                        <h4 class="fw-bold" style="color: var(--default-dark2-color);">shalomsantos1234@gmail.com</h4>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-1 col-form-label"><i class="fa-solid fa-phone"></i></label>
+                    <div class="col-sm-10">
+                        <h4 class="fw-bold" style="color: var(--default-dark2-color);">(85) 9 8601-3193</h4>
+                    </div>
+                </div>
                 <div class="d-flex gap-3 py-3">
                     <a href="https://github.com/shalomsantos">
                         <i class="icon-res fa-brands fa-github fs-1"></i>
